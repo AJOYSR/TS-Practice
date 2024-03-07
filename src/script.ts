@@ -20,21 +20,18 @@ const sayHello = (user: userType) => {
   console.log(`Hello ${user.age > 50 ? "Sir" : "Mr"} ${user.name}`);
 };
 
-
-sayHello({ name : "Ajoy", age: 24})
-
-// ----------------------------------------------------------------
-
+sayHello({ name: "Ajoy", age: 24 });
 
 // ----------------------------------------------------------------
-// amra chaile function er signature decleare korte pari, 
+
+// ----------------------------------------------------------------
+// amra chaile function er signature decleare korte pari,
 // zeita bole dile ovabei declare kora lagbe func ta
 
-let add : (x : number, y : number) => number; // mane parameters & return type [number, number] e hote hobe
+let add: (x: number, y: number) => number; // mane parameters & return type [number, number] e hote hobe
 
-add = (num1 : number, num2 : number) => {
-  // return num1 + num2;
-  console.log(num1)
-}
+add = (num1: number, num2: number) => {
+  return num1 + num2;
+};
 
 // ----------------------------------------------------------------
