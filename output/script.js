@@ -20,8 +20,25 @@ add = (num1, num2) => {
 };
 // ----------------------------------------------------------------
 // ----------------------------------------------------------------
-// module typescript
+// module typescript feature
 import { Player } from "./classes/Player.js";
 const player = new Player("Ajoy", 24, "Bangladesh");
 console.log(player.country);
+function drawRectangle(options) {
+    let width = options.width;
+    let length = options.length;
+}
+drawRectangle({
+    width: 20,
+    length: 30,
+});
+let threeDOptions = {
+    width: 20,
+    length: 30,
+    height: 40,
+};
+drawRectangle(threeDOptions); // evabe pathaite partesi, karon Reference pathacci
+let sakib;
+sakib = new Player("sakib", 36, "Bangladesh");
+const players = [];
 // ----------------------------------------------------------------

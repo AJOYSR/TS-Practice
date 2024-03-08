@@ -37,10 +37,45 @@ add = (num1: number, num2: number) => {
 // ----------------------------------------------------------------
 
 // ----------------------------------------------------------------
-// module typescript
+// module typescript feature
 import { Player } from "./classes/Player.js";
 
 const player = new Player("Ajoy", 24, "Bangladesh");
 console.log(player.country);
+
+// ----------------------------------------------------------------
+
+// ----------------------------------------------------------------
+// Interface practice
+
+interface RectangleOptions {
+  width: number;
+  length: number;
+}
+
+function drawRectangle(options: RectangleOptions) {
+  let width = options.width;
+  let length = options.length;
+}
+
+drawRectangle({
+  width: 20,
+  length: 30,
+});
+
+let threeDOptions = {
+  width: 20,
+  length: 30,
+  height: 40,
+};
+
+drawRectangle(threeDOptions); // evabe pathaite partesi, karon Reference pathacci
+
+import { isPlayer } from "./interfaces/isPlayer.js";
+
+let sakib : isPlayer;
+sakib = new Player("sakib", 36, "Bangladesh")
+
+const players : isPlayer[] = [];
 
 // ----------------------------------------------------------------
