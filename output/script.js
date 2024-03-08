@@ -1,4 +1,3 @@
-"use strict";
 const myFunc = (a, b, c = "true") => {
     return a + b;
 };
@@ -19,4 +18,10 @@ let add; // mane parameters & return type [number, number] e hote hobe
 add = (num1, num2) => {
     return num1 + num2;
 };
+// ----------------------------------------------------------------
+// ----------------------------------------------------------------
+// module typescript
+import { Player } from "./classes/Player.js";
+const player = new Player("Ajoy", 24, "Bangladesh");
+console.log(player.country);
 // ----------------------------------------------------------------

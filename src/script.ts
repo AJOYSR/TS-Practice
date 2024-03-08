@@ -35,3 +35,12 @@ add = (num1: number, num2: number) => {
 };
 
 // ----------------------------------------------------------------
+
+// ----------------------------------------------------------------
+// module typescript
+import { Player } from "./classes/Player.js";
+
+const player = new Player("Ajoy", 24, "Bangladesh");
+console.log(player.country);
+
+// ----------------------------------------------------------------
